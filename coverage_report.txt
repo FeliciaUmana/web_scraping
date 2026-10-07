@@ -1,4 +1,4 @@
-﻿============================= test session starts =============================
+============================= test session starts =============================
 platform win32 -- Python 3.13.14, pytest-9.1.1, pluggy-1.6.0
 rootdir: C:\Users\HP\Desktop\All Project\Data-Epic\web_scraping
 configfile: pyproject.toml
@@ -29,4 +29,4 @@ src\pl_pipeline\pipeline.py      59      1    98%   103
 -----------------------------------------------------------
 TOTAL                           312      1    99%
 Required test coverage of 80% reached. Total coverage: 99.68%
-============================= 54 passed in 3.88s ==============================
+============================= 54 passed in 3.57s ==============================
