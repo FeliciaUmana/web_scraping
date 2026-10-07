@@ -1,0 +1,6 @@
+@"
+__pycache__/
+.coverage
+.pytest_cache/
+.venv/
+"@ | Set-Content -Encoding utf8 .gitignore

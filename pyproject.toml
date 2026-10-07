@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "pl-pipeline"
+version = "0.1.0"
+description = "Scrape 2024/25 Premier League data from FBref, clean it and export to Excel"
+authors = ["Data Epic Student"]
+readme = "README.md"
+packages = [{ include = "pl_pipeline", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "*"
+beautifulsoup4 = "*"
+pandas = "*"
+openpyxl = "*"
+lxml = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+pytest-cov = "*"
+
+[tool.poetry.scripts]
+pl-pipeline = "pl_pipeline.pipeline:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "--cov=pl_pipeline --cov-report=term-missing --cov-fail-under=80"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

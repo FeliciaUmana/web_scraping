@@ -1,0 +1,32 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.13.14, pytest-9.1.1, pluggy-1.6.0
+rootdir: C:\Users\HP\Desktop\All Project\Data-Epic\web_scraping
+configfile: pyproject.toml
+testpaths: tests
+plugins: cov-7.1.0
+collected 54 items
+
+tests\test_clean.py ............                                         [ 22%]
+tests\test_export.py .......                                             [ 35%]
+tests\test_fetch.py ..........                                           [ 53%]
+tests\test_offline_mode.py ....                                          [ 61%]
+tests\test_parse.py ...........                                          [ 81%]
+tests\test_pipeline.py ...                                               [ 87%]
+tests\test_robots_policy.py .......                                      [100%]
+
+=============================== tests coverage ================================
+______________ coverage: platform win32, python 3.13.14-final-0 _______________
+
+Name                          Stmts   Miss  Cover   Missing
+-----------------------------------------------------------
+src\pl_pipeline\__init__.py       0      0   100%
+src\pl_pipeline\clean.py         76      0   100%
+src\pl_pipeline\config.py        18      0   100%
+src\pl_pipeline\export.py        31      0   100%
+src\pl_pipeline\fetch.py         65      0   100%
+src\pl_pipeline\parse.py         63      0   100%
+src\pl_pipeline\pipeline.py      59      1    98%   103
+-----------------------------------------------------------
+TOTAL                           312      1    99%
+Required test coverage of 80% reached. Total coverage: 99.68%
+============================= 54 passed in 3.88s ==============================
